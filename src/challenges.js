@@ -24,18 +24,28 @@ function splitSentence(frase){
 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(nomes) {
+  let listanomes = nomes[nomes.length-1]
+  let listanomes2 = nomes[0]
+   return listanomes + ', ' + listanomes2 
+} 
+console.log(concatName(["Ana", "Maria", "João"]))
+
+
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  let resultado = wins * 3 + ties * 1;
+  return resultado;
 }
+console.log(footballPoints(14,8))
+
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arraynumeros) {
+  let numeros = [9, 1, 2, 3, 9, 5, 7];
+  return Math.max.apply(null,numeros);
+
 }
 
 // Desafio 7
@@ -49,8 +59,14 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let frasecodificada = ("")
+  for(let letra of frase){
+    if(letra === 'a'){
+
+    }
+  }
+    return frasecodificada;
 }
 function decode() {
   // seu código aqui
