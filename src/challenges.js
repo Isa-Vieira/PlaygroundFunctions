@@ -143,8 +143,22 @@ function decode(frase) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array,name) {
+  let resultadolista = []
+
+  if(array.length === 0){
+    resultadolista = "Vazio!"
+  }
+  array = array.sort()
+
+  for(let index =0; index < array.length; index += 1){
+      resultadolista.push({
+        tech: array[index],
+        name: name
+      })
+  }
+  return resultadolista;
+  
 }
 
 module.exports = {
