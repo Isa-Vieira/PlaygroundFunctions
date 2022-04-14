@@ -90,7 +90,7 @@ function encode(frase) {
       frasecodificada += '2'
     } else if (letra == 'i') {
       frasecodificada += '3'
-    } else if (letra == '0') {
+    } else if (letra == 'o') {
       frasecodificada += '4'
     } else if (letra == 'u') {
       frasecodificada += '5'
@@ -104,8 +104,24 @@ function encode(frase) {
 console.log(encode('frase'));
 
 
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let frasecodificada = ''
+  for (let letra of frase) {
+    if (letra === '1') {
+      frasecodificada += 'a'
+    } else if (letra ==='2') {
+      frasecodificada += 'e'
+    } else if (letra === '3') {
+      frasecodificada += 'i'
+    } else if (letra === '4') {
+      frasecodificada += 'o'
+    } else if (letra === '5') {
+      frasecodificada += 'u'
+    } else {
+      frasecodificada = frasecodificada + letra
+    }
+  }
+  return frasecodificada;
 }
 
 // Desafio 10
