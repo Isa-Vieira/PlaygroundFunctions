@@ -76,8 +76,26 @@ function catAndMouse(mouse, cat1,cat2) {
 console.log(catAndMouse(1,2,3))
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(representandoarray) {
+  let resultadoarray = []
+  
+  for(let index=0; index < representandoarray.length; index +=1){
+     let divididopor3 = representandoarray[index] / 3;
+     let dividopor5 = representandoarray[index] / 5;
+     if(Number.isInteger(divididopor3) && Number.isInteger(dividopor5) === false){
+      resultadoarray.push ("fizz")
+     }
+     if(Number.isInteger(divididopor3)=== false && Number.isInteger(dividopor5)){
+      resultadoarray.push ("buzz")
+     } 
+     if(Number.isInteger(divididopor3) && Number.isInteger(dividopor5)){
+      resultadoarray.push ("fizzBuzz")
+     }
+     if(Number.isInteger(divididopor3)=== false && Number.isInteger(dividopor5) === false){
+      resultadoarray.push ("bug!")
+     }
+  }
+  return resultadoarray;
 }
 
 // Desafio 9
